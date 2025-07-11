@@ -37,7 +37,11 @@ source material comes from [p5_source.py](./p5_source.py)
 
 
 ```{python}
-from p5_source import df
+from p5_source import df, df_col_names
+df_col_names
+```
+
+```{python}
 df.head()
 ```
 
