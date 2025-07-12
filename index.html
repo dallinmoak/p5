@@ -2226,7 +2226,7 @@ vertical-align: -.125em;
   </ul></li>
   </ul>
 </nav>
-<div id="f50fd2a5" class="cell" data-execution_count="1">
+<div id="bd03802a" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
@@ -2237,217 +2237,6 @@ vertical-align: -.125em;
 <section id="source" class="level1">
 <h1>source</h1>
 <p>source material comes from <a href="./p5_source.py">p5_source.py</a></p>
-<div id="e8a1855f" class="cell" data-execution_count="2">
-<details class="code-fold">
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> p5_source <span class="im">import</span> df, df_col_names</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_col_names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="2">
-<pre><code>[&#39;RespondentID&#39;,
- &#39;Have you seen any of the 6 films in the Star Wars franchise?&#39;,
- &#39;Do you consider yourself to be a fan of the Star Wars film franchise?&#39;,
- &#39;Which of the following Star Wars films have you seen? Please select all that apply.&#39;,
- &#39;Unnamed: 4&#39;,
- &#39;Unnamed: 5&#39;,
- &#39;Unnamed: 6&#39;,
- &#39;Unnamed: 7&#39;,
- &#39;Unnamed: 8&#39;,
- &#39;Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.&#39;,
- &#39;Unnamed: 10&#39;,
- &#39;Unnamed: 11&#39;,
- &#39;Unnamed: 12&#39;,
- &#39;Unnamed: 13&#39;,
- &#39;Unnamed: 14&#39;,
- &#39;Please state whether you view the following characters favorably, unfavorably, or are unfamiliar with him/her.&#39;,
- &#39;Unnamed: 16&#39;,
- &#39;Unnamed: 17&#39;,
- &#39;Unnamed: 18&#39;,
- &#39;Unnamed: 19&#39;,
- &#39;Unnamed: 20&#39;,
- &#39;Unnamed: 21&#39;,
- &#39;Unnamed: 22&#39;,
- &#39;Unnamed: 23&#39;,
- &#39;Unnamed: 24&#39;,
- &#39;Unnamed: 25&#39;,
- &#39;Unnamed: 26&#39;,
- &#39;Unnamed: 27&#39;,
- &#39;Unnamed: 28&#39;,
- &#39;Which character shot first?&#39;,
- &#39;Are you familiar with the Expanded Universe?&#39;,
- &#39;Do you consider yourself to be a fan of the Expanded Universe?&#39;,
- &#39;Do you consider yourself to be a fan of the Star Trek franchise?&#39;,
- &#39;Gender&#39;,
- &#39;Age&#39;,
- &#39;Household Income&#39;,
- &#39;Education&#39;,
- &#39;Location (Census Region)&#39;]</code></pre>
-</div>
-</div>
-<div id="471af790" class="cell" data-execution_count="3">
-<details class="code-fold">
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">RespondentID</th>
-<th data-quarto-table-cell-role="th">Have you seen any of the 6 films in the Star Wars franchise?</th>
-<th data-quarto-table-cell-role="th">Do you consider yourself to be a fan of the Star Wars film franchise?</th>
-<th data-quarto-table-cell-role="th">Which of the following Star Wars films have you seen? Please select all that apply.</th>
-<th data-quarto-table-cell-role="th">Unnamed: 4</th>
-<th data-quarto-table-cell-role="th">Unnamed: 5</th>
-<th data-quarto-table-cell-role="th">Unnamed: 6</th>
-<th data-quarto-table-cell-role="th">Unnamed: 7</th>
-<th data-quarto-table-cell-role="th">Unnamed: 8</th>
-<th data-quarto-table-cell-role="th">Please rank the Star Wars films in order of preference with 1 being your favorite film in the franchise and 6 being your least favorite film.</th>
-<th data-quarto-table-cell-role="th">...</th>
-<th data-quarto-table-cell-role="th">Unnamed: 28</th>
-<th data-quarto-table-cell-role="th">Which character shot first?</th>
-<th data-quarto-table-cell-role="th">Are you familiar with the Expanded Universe?</th>
-<th data-quarto-table-cell-role="th">Do you consider yourself to be a fan of the Expanded Universe?</th>
-<th data-quarto-table-cell-role="th">Do you consider yourself to be a fan of the Star Trek franchise?</th>
-<th data-quarto-table-cell-role="th">Gender</th>
-<th data-quarto-table-cell-role="th">Age</th>
-<th data-quarto-table-cell-role="th">Household Income</th>
-<th data-quarto-table-cell-role="th">Education</th>
-<th data-quarto-table-cell-role="th">Location (Census Region)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>NaN</td>
-<td>Response</td>
-<td>Response</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>Star Wars: Episode IV A New Hope</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>...</td>
-<td>Yoda</td>
-<td>Response</td>
-<td>Response</td>
-<td>Response</td>
-<td>Response</td>
-<td>Response</td>
-<td>Response</td>
-<td>Response</td>
-<td>Response</td>
-<td>Response</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>3.292880e+09</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>Star Wars: Episode IV A New Hope</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>3</td>
-<td>...</td>
-<td>Very favorably</td>
-<td>I don&#39;t understand this question</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>Male</td>
-<td>18-29</td>
-<td>NaN</td>
-<td>High school degree</td>
-<td>South Atlantic</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>3.292880e+09</td>
-<td>No</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>...</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>Yes</td>
-<td>Male</td>
-<td>18-29</td>
-<td>$0 - $24,999</td>
-<td>Bachelor degree</td>
-<td>West South Central</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>3.292765e+09</td>
-<td>Yes</td>
-<td>No</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>1</td>
-<td>...</td>
-<td>Unfamiliar (N/A)</td>
-<td>I don&#39;t understand this question</td>
-<td>No</td>
-<td>NaN</td>
-<td>No</td>
-<td>Male</td>
-<td>18-29</td>
-<td>$0 - $24,999</td>
-<td>High school degree</td>
-<td>West North Central</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>3.292763e+09</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Star Wars: Episode I The Phantom Menace</td>
-<td>Star Wars: Episode II Attack of the Clones</td>
-<td>Star Wars: Episode III Revenge of the Sith</td>
-<td>Star Wars: Episode IV A New Hope</td>
-<td>Star Wars: Episode V The Empire Strikes Back</td>
-<td>Star Wars: Episode VI Return of the Jedi</td>
-<td>5</td>
-<td>...</td>
-<td>Very favorably</td>
-<td>I don&#39;t understand this question</td>
-<td>No</td>
-<td>NaN</td>
-<td>Yes</td>
-<td>Male</td>
-<td>18-29</td>
-<td>$100,000 - $149,999</td>
-<td>Some college or Associate degree</td>
-<td>West North Central</td>
-</tr>
-</tbody>
-</table>
-
-<p>5 rows × 38 columns</p>
-</div>
-</div>
-</div>
 <section id="elevator-pitch" class="level2">
 <h2 class="anchored" data-anchor-id="elevator-pitch">Elevator pitch</h2>
 <p><em>A SHORT (2-3 SENTENCES) PARAGRAPH THAT <code>DESCRIBES KEY INSIGHTS</code> TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS.</em> (Note: this is not a summary of the project, but a summary of the results.)</p>
@@ -2456,7 +2245,1469 @@ vertical-align: -.125em;
 <section id="questiontask-1" class="level2">
 <h2 class="anchored" data-anchor-id="questiontask-1">QUESTION|TASK 1</h2>
 <p><strong>Shorten the column names and clean them up for easier use with pandas.</strong> Provide a table or list that exemplifies how you fixed the names.</p>
-<p><em>type your results and analysis here</em></p>
+<p><em>cleaning process: I went ahead and renamed each of the columns to more consise and descriptive values. There were a few unique considerations for simplifying the data without obscuring potential model features:</em></p>
+<p><em>for the “Have you seen any of the 6 films in the Star Wars franchise?” column, I didn’t include it for consideration because under the assumption that a respondent who indicated they have seen at least one of the films will have responded that they have seen any of the films. Also redundant is the “Are you familiar with the Expanded Universe?” column, which (assuming all respondents who aren’t familiar with the EU are also not fans).</em></p>
+<p><em>for the episode ranking columns, i judged that respondent rankings between their top and bottom picks are not nearly as important, and could potentially add noise into the model’s training process. so I considered only top and bottom rankings, and made a column for each.</em></p>
+<p><em>for character favorability, each character still got their column, but since favorability is a spectrum, I quantified the favorability from 1 to 5 where 1 is the worst, 3 is neutral, and 5 is best. This way, a zero value can be reserved for respondents who skipped the question OR indicated they’re not familiar with the character. Any of the character columns might have a very tiny importance, so if during model training it becomes clear that a character is not relevant, i’ll exclude that column from the features.</em></p>
+<p><em>for the “Who Shot First?” question I also treated respondents who skipped the question as “not familiar with the character” the same way.</em></p>
+<p><em>the Gender column didn’t have any null values, and only had two gender values. That means that all respondents were either male or female, allowing for a simple one-hot encoding.</em></p>
+<p><em>The age and education columns were categorical, but each category was higher than the previous one, so I converted them to arbitrary numerical values that can be greater or less than the others relative to their position in the scale.</em></p>
+<p><em>the location column was also categorical, but it’s not really rankable or ordinal, so it was left as-is.</em></p>
+<div id="b97bf4a8" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> p5_source <span class="im">import</span> df_clean</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_clean.head(<span class="dv">40</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">RespondentID</th>
+<th data-quarto-table-cell-role="th">is_above_50k</th>
+<th data-quarto-table-cell-role="th">is_fan</th>
+<th data-quarto-table-cell-role="th">seen_ep1</th>
+<th data-quarto-table-cell-role="th">seen_ep2</th>
+<th data-quarto-table-cell-role="th">seen_ep3</th>
+<th data-quarto-table-cell-role="th">seen_ep4</th>
+<th data-quarto-table-cell-role="th">seen_ep5</th>
+<th data-quarto-table-cell-role="th">seen_ep6</th>
+<th data-quarto-table-cell-role="th">fav_episode</th>
+<th data-quarto-table-cell-role="th">least_fav_ep</th>
+<th data-quarto-table-cell-role="th">Han</th>
+<th data-quarto-table-cell-role="th">Luke</th>
+<th data-quarto-table-cell-role="th">Leia</th>
+<th data-quarto-table-cell-role="th">Anakin</th>
+<th data-quarto-table-cell-role="th">Obi_Wan</th>
+<th data-quarto-table-cell-role="th">Palpatine</th>
+<th data-quarto-table-cell-role="th">Vader</th>
+<th data-quarto-table-cell-role="th">Lando</th>
+<th data-quarto-table-cell-role="th">Boba_Fett</th>
+<th data-quarto-table-cell-role="th">C-3P0</th>
+<th data-quarto-table-cell-role="th">R2</th>
+<th data-quarto-table-cell-role="th">Jar_Jar</th>
+<th data-quarto-table-cell-role="th">Padme</th>
+<th data-quarto-table-cell-role="th">Yoda</th>
+<th data-quarto-table-cell-role="th">shot_first</th>
+<th data-quarto-table-cell-role="th">eu_fan</th>
+<th data-quarto-table-cell-role="th">is_trekkie</th>
+<th data-quarto-table-cell-role="th">sex</th>
+<th data-quarto-table-cell-role="th">age_group</th>
+<th data-quarto-table-cell-role="th">edu_level</th>
+<th data-quarto-table-cell-role="th">location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>3292879538</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>West South Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>3292765271</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>ep_1</td>
+<td>ep_6</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>2</td>
+<td>West North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>3292763116</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_3</td>
+<td>ep_2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West North Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>3292731220</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_3</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>3292719380</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_1</td>
+<td>ep_4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>Han</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>Middle Atlantic</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>3292654043</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_3</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>Han</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>South Atlantic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>3292640424</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>ep_1</td>
+<td>ep_6</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>Pacific</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>3292609214</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_4</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>South Atlantic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>3292596911</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_6</td>
+<td>ep_3</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>1</td>
+<td>&lt;NA&gt;</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>2</td>
+<td>5</td>
+<td>Mountain</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">16</td>
+<td>3292583038</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_2</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>Han</td>
+<td>True</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West South Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">17</td>
+<td>3292580516</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>ep_2</td>
+<td>ep_6</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>Han</td>
+<td>True</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>New England</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">20</td>
+<td>3292562297</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_3</td>
+<td>ep_1</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>Greedo</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">23</td>
+<td>3292511801</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>Greedo</td>
+<td>True</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>South Atlantic</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">24</td>
+<td>3292483200</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_2</td>
+<td>ep_1</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>Han</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>Pacific</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">26</td>
+<td>3292447974</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>2</td>
+<td>East South Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">27</td>
+<td>3292420123</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_6</td>
+<td>ep_2</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>South Atlantic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">30</td>
+<td>3292376985</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>1</td>
+<td>5</td>
+<td>Han</td>
+<td>True</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>East North Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">31</td>
+<td>3292366792</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_6</td>
+<td>ep_4</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>&lt;NA&gt;</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>&lt;NA&gt;</td>
+<td>4</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>2</td>
+<td>2</td>
+<td>New England</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">32</td>
+<td>3292339379</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>Han</td>
+<td>True</td>
+<td>True</td>
+<td>M</td>
+<td>2</td>
+<td>3</td>
+<td>West North Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">34</td>
+<td>3292318652</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>ep_2</td>
+<td>ep_1</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>Han</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>2</td>
+<td>Mountain</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">35</td>
+<td>3292297848</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>2</td>
+<td>5</td>
+<td>East South Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">36</td>
+<td>3292290677</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_4</td>
+<td>ep_1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>Han</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>2</td>
+<td>5</td>
+<td>East North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">37</td>
+<td>3292281095</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_3</td>
+<td>ep_5</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>West North Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">39</td>
+<td>3292264069</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_4</td>
+<td>ep_1</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>Han</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>2</td>
+<td>4</td>
+<td>Middle Atlantic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">40</td>
+<td>3292257520</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_6</td>
+<td>ep_3</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>Greedo</td>
+<td>True</td>
+<td>True</td>
+<td>M</td>
+<td>2</td>
+<td>2</td>
+<td>West North Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">41</td>
+<td>3292249492</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_6</td>
+<td>ep_2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>Han</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>2</td>
+<td>5</td>
+<td>Middle Atlantic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">42</td>
+<td>3292222729</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>Han</td>
+<td>True</td>
+<td>False</td>
+<td>M</td>
+<td>2</td>
+<td>5</td>
+<td>Pacific</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">43</td>
+<td>3292221635</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>Greedo</td>
+<td>True</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>West North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">44</td>
+<td>3292218251</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>Han</td>
+<td>True</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>Pacific</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">45</td>
+<td>3292214307</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_6</td>
+<td>ep_2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+<td>Han</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>2</td>
+<td>New England</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">47</td>
+<td>3292202220</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>2</td>
+<td>Pacific</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">48</td>
+<td>3292189580</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_3</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>Han</td>
+<td>True</td>
+<td>True</td>
+<td>M</td>
+<td>2</td>
+<td>3</td>
+<td>West North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">49</td>
+<td>3292187343</td>
+<td>True</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_4</td>
+<td>ep_1</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>&lt;NA&gt;</td>
+<td>2</td>
+<td>&lt;NA&gt;</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>Pacific</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">50</td>
+<td>3292186608</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>2</td>
+<td>5</td>
+<td>Pacific</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">51</td>
+<td>3292178389</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_2</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>Greedo</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>Mountain</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">53</td>
+<td>3292173922</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_3</td>
+<td>ep_4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>2</td>
+<td>3</td>
+<td>West South Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">54</td>
+<td>3292167131</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>Han</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>2</td>
+<td>New England</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">55</td>
+<td>3292162057</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_1</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>&lt;NA&gt;</td>
+<td>3</td>
+<td>4</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>Mountain</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">57</td>
+<td>3292156614</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>Han</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>West South Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">58</td>
+<td>3292148570</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_1</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>Han</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>5</td>
+<td>West North Central</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
 </section>
 <section id="questiontask-2" class="level2">
 <h2 class="anchored" data-anchor-id="questiontask-2">QUESTION|TASK 2</h2>
@@ -2467,17 +3718,860 @@ a. Create a new column that converts the education groupings to a single number.
 a. Create a new column that converts the income ranges to a single number. Drop the income range categorical column<br>
 a. Create your target (also known as “y” or “label”) column based on the new income range column<br>
 a. One-hot encode all remaining categorical columns</p>
-<p><em>type your results and analysis here</em></p>
+<p><em>My previous clean up already handled age range and education level numerical ranking, and created a boolean label column. Here’s the data filtered for records where respondents have seen at least one film.</em></p>
+<div id="4586ab93" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> p5_source <span class="im">import</span> df_clean_filtered</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df_clean_filtered.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="31">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">RespondentID</th>
+<th data-quarto-table-cell-role="th">is_above_50k</th>
+<th data-quarto-table-cell-role="th">is_fan</th>
+<th data-quarto-table-cell-role="th">seen_ep1</th>
+<th data-quarto-table-cell-role="th">seen_ep2</th>
+<th data-quarto-table-cell-role="th">seen_ep3</th>
+<th data-quarto-table-cell-role="th">seen_ep4</th>
+<th data-quarto-table-cell-role="th">seen_ep5</th>
+<th data-quarto-table-cell-role="th">seen_ep6</th>
+<th data-quarto-table-cell-role="th">fav_episode</th>
+<th data-quarto-table-cell-role="th">least_fav_ep</th>
+<th data-quarto-table-cell-role="th">Han</th>
+<th data-quarto-table-cell-role="th">Luke</th>
+<th data-quarto-table-cell-role="th">Leia</th>
+<th data-quarto-table-cell-role="th">Anakin</th>
+<th data-quarto-table-cell-role="th">Obi_Wan</th>
+<th data-quarto-table-cell-role="th">Palpatine</th>
+<th data-quarto-table-cell-role="th">Vader</th>
+<th data-quarto-table-cell-role="th">Lando</th>
+<th data-quarto-table-cell-role="th">Boba_Fett</th>
+<th data-quarto-table-cell-role="th">C-3P0</th>
+<th data-quarto-table-cell-role="th">R2</th>
+<th data-quarto-table-cell-role="th">Jar_Jar</th>
+<th data-quarto-table-cell-role="th">Padme</th>
+<th data-quarto-table-cell-role="th">Yoda</th>
+<th data-quarto-table-cell-role="th">shot_first</th>
+<th data-quarto-table-cell-role="th">eu_fan</th>
+<th data-quarto-table-cell-role="th">is_trekkie</th>
+<th data-quarto-table-cell-role="th">sex</th>
+<th data-quarto-table-cell-role="th">age_group</th>
+<th data-quarto-table-cell-role="th">edu_level</th>
+<th data-quarto-table-cell-role="th">location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>3292879538</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>West South Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>3292765271</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>ep_1</td>
+<td>ep_6</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>2</td>
+<td>West North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>3292763116</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_3</td>
+<td>ep_2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West North Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>3292731220</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_3</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>3292719380</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_1</td>
+<td>ep_4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>Han</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>Middle Atlantic</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>3292654043</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_3</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>Han</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>South Atlantic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>3292640424</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>ep_1</td>
+<td>ep_6</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>Pacific</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>3292609214</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_4</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>South Atlantic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>3292596911</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_6</td>
+<td>ep_3</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>1</td>
+<td>&lt;NA&gt;</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>2</td>
+<td>5</td>
+<td>Mountain</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">16</td>
+<td>3292583038</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_2</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>Han</td>
+<td>True</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West South Central</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p><em>here’s that same data with all columns one-hot encoded.</em></p>
+<div id="10a8c847" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> p5_source <span class="im">import</span> df_1_ht</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df_1_ht.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="32">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">RespondentID</th>
+<th data-quarto-table-cell-role="th">is_above_50k</th>
+<th data-quarto-table-cell-role="th">is_fan</th>
+<th data-quarto-table-cell-role="th">seen_ep1</th>
+<th data-quarto-table-cell-role="th">seen_ep2</th>
+<th data-quarto-table-cell-role="th">seen_ep3</th>
+<th data-quarto-table-cell-role="th">seen_ep4</th>
+<th data-quarto-table-cell-role="th">seen_ep5</th>
+<th data-quarto-table-cell-role="th">seen_ep6</th>
+<th data-quarto-table-cell-role="th">fav_episode</th>
+<th data-quarto-table-cell-role="th">least_fav_ep</th>
+<th data-quarto-table-cell-role="th">Han</th>
+<th data-quarto-table-cell-role="th">Luke</th>
+<th data-quarto-table-cell-role="th">Leia</th>
+<th data-quarto-table-cell-role="th">Anakin</th>
+<th data-quarto-table-cell-role="th">Obi_Wan</th>
+<th data-quarto-table-cell-role="th">Palpatine</th>
+<th data-quarto-table-cell-role="th">Vader</th>
+<th data-quarto-table-cell-role="th">Lando</th>
+<th data-quarto-table-cell-role="th">Boba_Fett</th>
+<th data-quarto-table-cell-role="th">C-3P0</th>
+<th data-quarto-table-cell-role="th">R2</th>
+<th data-quarto-table-cell-role="th">Jar_Jar</th>
+<th data-quarto-table-cell-role="th">Padme</th>
+<th data-quarto-table-cell-role="th">Yoda</th>
+<th data-quarto-table-cell-role="th">shot_first</th>
+<th data-quarto-table-cell-role="th">eu_fan</th>
+<th data-quarto-table-cell-role="th">is_trekkie</th>
+<th data-quarto-table-cell-role="th">sex</th>
+<th data-quarto-table-cell-role="th">age_group</th>
+<th data-quarto-table-cell-role="th">edu_level</th>
+<th data-quarto-table-cell-role="th">location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>3292879538</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>West South Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>3292765271</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>ep_1</td>
+<td>ep_6</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>2</td>
+<td>West North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>3292763116</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_3</td>
+<td>ep_2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West North Central</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>3292731220</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_3</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West North Central</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>3292719380</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_1</td>
+<td>ep_4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>Han</td>
+<td>False</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>Middle Atlantic</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>3292654043</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_3</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>Han</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>South Atlantic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>3292640424</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>ep_1</td>
+<td>ep_6</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>Pacific</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>3292609214</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_4</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>Greedo</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>1</td>
+<td>4</td>
+<td>South Atlantic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>3292596911</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_6</td>
+<td>ep_3</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>1</td>
+<td>&lt;NA&gt;</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>5</td>
+<td>5</td>
+<td>&lt;NA&gt;</td>
+<td>False</td>
+<td>False</td>
+<td>M</td>
+<td>2</td>
+<td>5</td>
+<td>Mountain</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">16</td>
+<td>3292583038</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>ep_5</td>
+<td>ep_2</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>Han</td>
+<td>True</td>
+<td>True</td>
+<td>M</td>
+<td>1</td>
+<td>3</td>
+<td>West South Central</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
 </section>
 <section id="questiontask-3" class="level2">
 <h2 class="anchored" data-anchor-id="questiontask-3">QUESTION|TASK 3</h2>
 <p><strong>Validate that the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article.</strong></p>
-<p><em>type your results and analysis here</em></p>
+<p><em>my cleaned up data excluded rows where household income wasn’t provided, cause that’s gonna be the label for the predictive model. Also, respondants who skipped a question were treated the same as respondents who indicated they didn’t know the character or what the “who shot first” thing is, so it’ll look a bit different from the article’s data, which probably reported on answers to each question and excluded records where the question wasn’t answered from reports on that particular question</em></p>
+<div id="590bfaa8" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> p5_source <span class="im">import</span> character_favor_chart</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>character_favor_chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="33">
+<pre><code>&#39;&#39;</code></pre>
+</div>
+</div>
+<div id="c996f944" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> p5_source <span class="im">import</span> shot_first_chart</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>shot_first_chart</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="34">
+<pre><code>&#39;&#39;</code></pre>
+</div>
+</div>
 </section>
 <section id="questiontask-4" class="level2">
 <h2 class="anchored" data-anchor-id="questiontask-4">QUESTION|TASK 4</h2>
 <p><strong>Build a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy.</strong></p>
-<p><em>type your results and analysis here</em></p>
+<p><em>gradient boosting classifier</em></p>
+<div id="6ef3199d" class="cell" data-execution_count="7">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> p5_source <span class="im">import</span> training_split, classifier_hyperparameters, classifierScore</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>display(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="ss">f&quot;the model used these custom hyperparameters: </span><span class="sc">{</span><span class="bu">str</span>(classifier_hyperparameters)<span class="sc">}</span><span class="ss"> and achieved an accuracy of </span><span class="sc">{</span>classifierScore<span class="sc">:.2%}</span><span class="ss"> on the test set. Training and test sets were split with a </span><span class="sc">{</span>training_split[<span class="dv">0</span>]<span class="sc">:.0%}</span><span class="ss">:</span><span class="sc">{</span>training_split[<span class="dv">1</span>]<span class="sc">:.0%}</span><span class="ss"> training : test ratio.&quot;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<pre><code>&quot;the model used these custom hyperparameters: {&#39;foo&#39;: &#39;bar&#39;} and achieved an accuracy of 0.00% on the test set. Training and test sets were split with a 100%:0% training : test ratio.&quot;</code></pre>
+</div>
+</div>
 <hr>
 </section>
 <section id="stretch-questiontask-1" class="level2">

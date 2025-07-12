@@ -35,16 +35,6 @@ _ = os.getcwd()
 
 source material comes from [p5_source.py](./p5_source.py)
 
-
-```{python}
-from p5_source import df, df_col_names
-df_col_names
-```
-
-```{python}
-df.head()
-```
-
 ## Elevator pitch
 _A SHORT (2-3 SENTENCES) PARAGRAPH THAT `DESCRIBES KEY INSIGHTS` TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS._ (Note: this is not a summary of the project, but a summary of the results.)
 
@@ -54,13 +44,26 @@ _A Client has requested this analysis and this is your one shot of what you woul
 
 __Shorten the column names and clean them up for easier use with pandas.__ Provide a table or list that exemplifies how you fixed the names. 
 
-_type your results and analysis here_
+_cleaning process: I went ahead and renamed each of the columns to more consise and descriptive values. There were a few unique considerations for simplifying the data without obscuring potential model features:_
+
+_for the "Have you seen any of the 6 films in the Star Wars franchise?" column, I didn't include it for consideration because under the assumption that a respondent who indicated they have seen at least one of the films will have responded that they have seen any of the films. Also redundant is the "Are you familiar with the Expanded Universe?" column, which (assuming all respondents who aren't familiar with the EU are also not fans)._
+
+_for the episode ranking columns, i judged that respondent rankings between their top and bottom picks are not nearly as important, and could potentially add noise into the model's training process. so I considered only top and bottom rankings, and made a column for each._
+
+_for character favorability, each character still got their column, but since favorability is a spectrum, I quantified the favorability from 1 to 5 where 1 is the worst, 3 is neutral, and 5 is best. This way, a zero value can be reserved for respondents who skipped the question OR indicated they're not familiar with the character. Any of the character columns might have a very tiny importance, so if during model training it becomes clear that a character is not relevant, i'll exclude that column from the features._
+
+_for the "Who Shot First?" question I also treated respondents who skipped the question as "not familiar with the character" the same way._
+
+_the Gender column didn't have any null values, and only had two gender values. That means that all respondents were either male or female, allowing for a simple one-hot encoding._
+
+_The age and education columns were categorical, but each category was higher than the previous one, so I converted them to arbitrary numerical values that can be greater or less than the others relative to their position in the scale._
+
+_the location column was also categorical, but it's not really rankable or ordinal, so it was left as-is._
 
 ```{python}
-
-
+from p5_source import df_clean
+df_clean.head(40)
 ```
-
 
 ## QUESTION|TASK 2
 
@@ -72,54 +75,47 @@ __Clean and format the data so that it can be used in a machine learning model._
     a. Create your target (also known as “y” or “label”) column based on the new income range column  
     a. One-hot encode all remaining categorical columns   
 
-_type your results and analysis here_
+_My previous clean up already handled age range and education level numerical ranking, and created a boolean label column. Here's the data filtered for records where respondents have seen at least one film._
 
 ```{python}
-
+from p5_source import df_clean_filtered
+df_clean_filtered.head(10)
 ```
 
-```{python}
-
-```
+_here's that same data with all columns one-hot encoded._
 
 ```{python}
-
-```
-
-```{python}
-
-```
-
-```{python}
-
-```
-
-```{python}
-
+from p5_source import df_1_ht
+df_1_ht.head(10)
 ```
 
 ## QUESTION|TASK 3
 
 __Validate that the data provided on GitHub lines up with the article by recreating 2 of the visuals from the article.__  
 
-_type your results and analysis here_
+_my cleaned up data excluded rows where household income wasn't provided, cause that's gonna be the label for the predictive model. Also, respondants who skipped a question were treated the same as respondents who indicated they didn't know the character or what the "who shot first" thing is, so it'll look a bit different from the article's data, which probably reported on answers to each question and excluded records where the question wasn't answered from reports on that particular question_
 
 ```{python}
-
+from p5_source import character_favor_chart
+character_favor_chart
 ```
 
 ```{python}
-
+from p5_source import shot_first_chart
+shot_first_chart
 ```
 
 ## QUESTION|TASK 4
 
 __Build a machine learning model that predicts whether a person makes more than $50k. Describe your model and report the accuracy.__ 
 
-_type your results and analysis here_
+_gradient boosting classifier_
 
-```{python}
-
+```{python} 
+from p5_source import training_split, classifier_hyperparameters, classifierScore
+display(
+  f"the model used these custom hyperparameters: {str(classifier_hyperparameters)} and achieved an accuracy of {classifierScore:.2%} on the test set. Training and test sets were split with a {training_split[0]:.0%}:{training_split[1]:.0%} training : test ratio."
+)
 ```
 
 ---
